@@ -1,0 +1,13 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.9.2",
+    "tsc": "^2.0.4",
+    "typescript": "^5.2.2"
+  }
+}
