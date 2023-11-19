@@ -1,9 +1,6 @@
-import {readFileFromParam, writeResultToFile} from "../../utils/utils";
+import {readFileFromParam, readLinesFromParam, writeResultToFile} from "../../utils/utils";
 
-const input = readFileFromParam()
-
-const caloriesPerElve = input
-    .split("\n")
+const caloriesPerElve = readLinesFromParam()
     .reduce((acc, curr) => {
         return curr.trim() === "" ? [...acc, 0] : [...acc.slice(0, -1), acc[acc.length - 1] + parseInt(curr)]
     }, [0]);

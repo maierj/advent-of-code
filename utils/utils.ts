@@ -5,12 +5,12 @@ function getInputFileName() {
     return `${process.cwd()}${inputParam.startsWith("/") ? "" : "/"}${inputParam}`
 }
 
-export function getNumberRange(n: number) {
-    return [...Array(n).keys()]
-}
-
 export function readFileFromParam() {
     return fs.readFileSync(getInputFileName()).toString();
+}
+
+export function readLinesFromParam() {
+    return readFileFromParam().split("\n");
 }
 
 export function writeResultToFile(result: any) {
