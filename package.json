@@ -4,9 +4,14 @@
   "description": "",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --config .prettierrc '**/*.ts' --write"
+  },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
     "@types/node": "^20.9.2",
+    "prettier": "^3.1.0",
     "tsc": "^2.0.4",
     "typescript": "^5.2.2"
   }

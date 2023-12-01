@@ -1,0 +1,1 @@
+{"totalSizeOfDirectoriesUnderThreshold":1583951,"smallestSubDirAboveSize":214171}
