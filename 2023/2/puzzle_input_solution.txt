@@ -1,0 +1,1 @@
+{"possibleIdSum":1931,"power":83105}
