@@ -1,0 +1,1 @@
+{"sumOfWins":13,"result2":30}
