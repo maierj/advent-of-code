@@ -31,8 +31,8 @@ export function readFileFromParam() {
 	return fs.readFileSync(getInputFileName()).toString();
 }
 
-export function readLinesFromParam() {
-	return readFileFromParam().split('\n');
+export function readLinesFromParam(lineSeparator?: string) {
+	return readFileFromParam().split(lineSeparator ?? '\n');
 }
 
 export function writeResultToFile(result: any) {
