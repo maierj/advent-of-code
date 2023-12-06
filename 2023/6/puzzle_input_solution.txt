@@ -1,0 +1,1 @@
+{"numberOfWaysToWin":5133600,"numberOfWaysToWinLong":40651271}
