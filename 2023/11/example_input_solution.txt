@@ -1,0 +1,1 @@
+{"galaxyDistanceSum":374,"galaxyDistanceSum2":1030}
