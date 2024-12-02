@@ -83,33 +83,11 @@ export type Coordinate2D = {
 	y: number
 }
 
+export const equals2D = (lhs: Coordinate2D, rhs: Coordinate2D) => {
+	return lhs.x === rhs.x && lhs.y === rhs.y
+}
+
 export type Line2D = {
 	start: Coordinate2D
 	end: Coordinate2D
-}
-
-export function intersects(lhs: Line2D, rhs: Line2D) {
-	const lhsXDiff = Math.abs(lhs.start.x - lhs.end.x);
-	const lhsYDiff = Math.abs(lhs.start.y - lhs.end.y);
-	const rhsXDiff = Math.abs(rhs.start.y - rhs.end.y);
-	const rhsYDiff = Math.abs(rhs.start.y - rhs.end.y);
-
-	getNumberRange(lhsXDiff).forEach((lhsXOffset) => {
-		getNumberRange(lhsYDiff).forEach((lhsYOffset) => {
-			getNumberRange(rhsXDiff).forEach((rhsXOffset) => {
-				getNumberRange(rhsYDiff).forEach((rhsYOffset) => {
-					const lhsX = lhs.start.x + lhsXOffset
-					const lhsY = lhs.start.y + lhsYOffset
-					const rhsX = rhs.start.x + rhsXOffset
-					const rhsY = rhs.start.y + rhsYOffset
-
-					if (lhsX === rhsX && lhsY === rhsY) {
-						return true;
-					}
-				})
-			})
-		})
-	})
-
-	return false;
 }
